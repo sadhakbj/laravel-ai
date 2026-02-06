@@ -87,6 +87,11 @@ return [
             'key' => env('JINA_API_KEY'),
         ],
 
+        'ollama' => [
+            'driver' => 'ollama',
+            'url' => env('OLLAMA_URL', 'http://localhost:11434/v1'),
+        ],
+
         'openai' => [
             'driver' => 'openai',
             'key' => env('OPENAI_API_KEY'),
